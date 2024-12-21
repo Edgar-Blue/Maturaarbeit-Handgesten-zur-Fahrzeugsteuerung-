@@ -1,2 +1,2 @@
-# Maturaarbeit-Handgesten-zur-Fahrzeugsteuerung-
+# Maturaarbeit-Handgesten-zur-Fahrzeugsteuerung
 Zusätzliche Dateien, welche für die Maturaarbeit Relevanz haben
