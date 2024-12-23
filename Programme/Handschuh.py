@@ -5,22 +5,23 @@ import math
 import socket
 import network
 
-# Initialize I2C and MPU6050
+# I2C Kommunikation einrichten
 i2c = I2C(0, sda=Pin(16), scl=Pin(17), freq=100000)
 mpu = MPU6050(i2c)
 
-# Initialize Flex Sensors
+# Flex-Sensoren definieren
 flex_sensor1 = ADC(Pin(26))
 flex_sensor2 = ADC(Pin(27))
 
-# Kalman filter variables
+"""---Kalman-Filter Variablen (Von Chat-GPT)------------"""
+
 angle_x = 0  # Estimated angle for X-axis
 angle_y = 0  # Estimated angle for Y-axis
 bias_x = 0   # Bias for X-axis
 bias_y = 0   # Bias for Y-axis
 P = [[1, 0], [0, 1]]  # Error covariance matrix
 
-# Kalman filter parameters
+# Kalman-Filter Parameter
 Q_angle = 0.001  # Process noise variance for the angle
 Q_bias = 0.003   # Process noise variance for the gyro bias
 R_measure = 0.03  # Measurement noise variance
@@ -30,11 +31,12 @@ alpha = 0.98
 
 # Time step for integration
 previous_time = time.ticks_ms()
-
+"""--------------------------------------------------------------------"""
+# Routerangaben
 SSID = 'Kasatka'
 PASSWORD = 'FHG47TTMD3'
 
-# Buzzer setup
+# Buzzer einrichten
 buzzer = PWM(Pin(5))
 
 def play_tone(frequency, duration, volume=0.3):
@@ -69,6 +71,7 @@ def wlan_connection():
     print("Connected to:", wlan.ifconfig())
     connection_melody()
 
+"""----------Kalman-Filter-Formel---------------------------------"""
 def kalman_filter_update(angle, bias, rate, measurement, P, dt):
     rate_unbiased = rate - bias
     angle += rate_unbiased * dt
@@ -92,6 +95,7 @@ def kalman_filter_update(angle, bias, rate, measurement, P, dt):
     P[1][1] -= K[1] * P01_temp
 
     return angle, bias, P
+"""------------------------------------------------------------"""
 
 def calculate_angle_from_accel():
     accel_x = mpu.accel.x
@@ -102,8 +106,11 @@ def calculate_angle_from_accel():
     roll = math.atan2(-accel_x, math.sqrt(accel_y**2 + accel_z**2)) * (180 / math.pi)
     return pitch, roll
 
-# Main program
+# Programmanfang
+
 wlan_connection()
+
+# Verbinde dich zum Raspberry Pi 4 (sein Programm muss bereits eingeschaltet sein)
 address = ('192.168.1.83', 12345)
 s = socket.socket()
 s.connect(address)
@@ -113,22 +120,22 @@ while True:
     dt = (time.ticks_diff(current_time, previous_time)) / 1000.0
     previous_time = current_time
 
-    # Read gyroscope values
+    # Gyroskopwerte ablesen
     gyro_x = mpu.gyro.x
     gyro_y = mpu.gyro.y
 
-    # Get accelerometer-based pitch and roll angles
+    # Winkel mit Beschleunigungssensor ablesen
     accel_pitch, accel_roll = calculate_angle_from_accel()
 
-    # Apply Kalman filter
+    # Kalman-Filter anwenden
     angle_x, bias_x, P = kalman_filter_update(angle_x, bias_x, gyro_x, accel_pitch, P, dt)
     angle_y, bias_y, P = kalman_filter_update(angle_y, bias_y, gyro_y, accel_roll, P, dt)
 
-    # Read flex sensor values
+    # Flex-Sensoren ablesen
     flex_value1 = flex_sensor1.read_u16()
     flex_value2 = flex_sensor2.read_u16()
 
-    # Combine all data into one message
+    # Alle Werte in einen String kombinieren und dem Raspberry Pi 4 schicken
     message = f"{flex_value1}#{flex_value2}#{angle_x:.2f}#{angle_y:.2f}"
     s.send(message.encode('utf-8'))
     print(message)
