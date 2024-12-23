@@ -1,2 +1,2 @@
 # Maturaarbeit-Handgesten-zur-Fahrzeugsteuerung
-Zusätzliche Dateien, welche für die Maturaarbeit Relevanz haben
+Es ist schwierig meine Resultate in den Anhang reinzubringen und es könnte wenig Relevanz haben für bestimmte Leser.
