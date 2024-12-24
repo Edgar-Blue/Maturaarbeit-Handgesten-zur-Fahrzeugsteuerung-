@@ -1,0 +1,7 @@
+Chat-GPT wurde im schriftlichen Teil der Arbeit für sprachliche und strukturelle Korrekturen eingesetzt. Im Verlauf der praktischen Arbeit kam Chat-GPT jedoch ebenfalls bei der Korrektur der Programme zum Einsatz. Dabei lieferte es hilfreiche Korrekturtipps, indem das Programm zusammen mit der entsprechenden Fehlermeldung als Prompt eingegeben wurde. Chat-GPT diente somit als zusätzliches Werkzeug zur Fehlerbehebung.
+
+Ein weiterer zu berücksichtigender Aspekt war das Zusammenführen zweier bereits bestehender Programme. Die praktische Arbeit bestand darin, die einzelnen Komponenten zu testen und anschließend gemeinsam in Betrieb zu nehmen. Da das Zusammenfügen der Programme mit erheblichem Arbeitsaufwand verbunden sein konnte, wurden beide Programme zusammen mit einer kurzen Beschreibung der gewünschten Funktionalität in Chat-GPT eingegeben.
+
+Falls ein Code generiert wurde, fragte man zeitgleich nach Erklärungen und Quellen, um im Internet direkt vergleichbare Referenzen zu finden, die den Code unterstützen konnten.
+
+Der Grund, weshalb in einem Fall eine explizite Quellenangabe für Chat-GPT notwendig war, liegt in der Generierung eines Kalman-Filters: Chat-GPT war hier die letzte Hoffnung, nachdem alle vorherigen Methoden gescheitert waren. Der dabei generierte Code hatte keine vergleichbare Vorlage im Internet, weshalb Chat-GPT in diesem Fall eindeutig als Quelle genannt werden musste.
