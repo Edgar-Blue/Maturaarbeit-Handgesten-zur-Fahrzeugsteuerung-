@@ -36,7 +36,7 @@ previous_time = time.ticks_ms()
 SSID = 'Kasatka'
 PASSWORD = 'FHG47TTMD3'
 
-# Buzzer einrichten
+# Buzzer einrichten (nicht Teil der Arbeit)
 buzzer = PWM(Pin(5))
 
 def play_tone(frequency, duration, volume=0.3):
