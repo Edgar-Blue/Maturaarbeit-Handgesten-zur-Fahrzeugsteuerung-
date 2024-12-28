@@ -4,4 +4,4 @@ Ein weiterer zu berücksichtigender Aspekt war das Zusammenführen zweier bereit
 
 Falls ein Code generiert wurde, fragte man zeitgleich nach Erklärungen und Quellen, um im Internet direkt vergleichbare Referenzen zu finden, die den Code unterstützen konnten.
 
-Der Grund, weshalb in einem Fall eine explizite Quellenangabe für Chat-GPT notwendig war, liegt in der Generierung eines Kalman-Filters: Chat-GPT war hier die letzte Hoffnung, nachdem alle vorherigen Methoden gescheitert waren. Der dabei generierte Code hatte keine vergleichbare Vorlage im Internet, weshalb Chat-GPT in diesem Fall eindeutig als Quelle genannt werden musste.
+Der Grund, weshalb in einem Fall eine explizite Quellenangabe für Chat-GPT notwendig war, liegt in der Generierung eines Kalman-Filters: Chat-GPT war die letzte Option, nachdem alle vorherigen Methoden (eigener Code oder Internetrecherchen) gescheitert waren. Zum Code wurden keine vergleichbare Vorlagen im Internet gefunden, weshalb Chat-GPT in diesem Fall eindeutig als Quelle genannt werden musste.
