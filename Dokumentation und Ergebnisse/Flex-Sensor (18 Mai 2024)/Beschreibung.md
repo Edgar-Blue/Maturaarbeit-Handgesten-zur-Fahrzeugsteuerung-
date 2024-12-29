@@ -1,0 +1,1 @@
+Dieses Video stellt das erste Progress dar, welche einen Zusammenhang mit der Arbeit hat. Es wurde ein Arduino benutzt, damit der Stromkreis und die Nutzung des Flex-Sensors einfach zu verstehen war. 
