@@ -33,8 +33,8 @@ alpha = 0.98
 previous_time = time.ticks_ms()
 """--------------------------------------------------------------------"""
 # Routerangaben
-SSID = 'Kasatka'
-PASSWORD = 'FHG47TTMD3'
+SSID = 'Routername'
+PASSWORD = 'Passwort des Routers'
 
 # Buzzer einrichten (nicht Teil der Arbeit)
 buzzer = PWM(Pin(5))
