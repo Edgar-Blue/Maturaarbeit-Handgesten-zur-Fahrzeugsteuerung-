@@ -1,0 +1,1 @@
+Im Gegensatz zur vorherigen Variante wird nicht der Winkel für die Position verwendet, sondern für die Bewegung in die entsprechende Richtung. Ist die Neigung grösser, dreht sich die Kamera in die entsprechende Richtung schneller.
