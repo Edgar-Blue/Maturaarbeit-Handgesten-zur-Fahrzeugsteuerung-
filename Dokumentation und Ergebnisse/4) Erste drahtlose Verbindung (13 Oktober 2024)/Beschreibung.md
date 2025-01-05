@@ -1,1 +1,1 @@
-Das Flex-Sensor-Programm bleibt, sodass nur die Verbindung mit dem Raspberry Pi Auto über den Router hinzugefügt wurde. Die Daten werden in Paketen gesendet und empfangen. Für diese Methode wird das Socketmodul von Python benutzt.
+Das Flex-Sensor-Programm bleibt unverändert, es wurde lediglich die Verbindung mit dem Raspberry Pi Auto über den Router hinzugefügt. Die Daten werden in Paketen gesendet und empfangen. Für diese Methode wird das Socket-Modul von Python verwendet.
