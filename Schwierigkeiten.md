@@ -1,0 +1,4 @@
+Diese Arbeit war ein ziemliches Abenteuer mit coolen Fortschritten, aber auch mit genug Herausforderungen. Diese Seite befasst sich mit den 4 grössten Schwierigkeiten, welche in dieser Arbeit passiert sind, welche das Zeitmanagement gehindert haben.
+
+Am Anfang war unklar was besser für diese Arbeit geeignet wäre, der Arduino oder der Raspberry Pi. Es wurde mit dem Arduino gearbeitet, jedoch brauchte es eine spezielle Bibliothek, welche Pyfirmata heisst. Sie erlaubt es Python zu C++ umzuwandeln, damit man den Arduino mit einer anderen Programmiersprache verwenden kann. Das Problem war, dass das  gespeicherte Programm auf dem Arduino eigentlich Pyfirmata war. Das heisst, dass das Pythonprogramm, welches eigentlich die Logik enthält immer zugeführt werden muss, weshalb Arduino schlecht für meine Arbeit geeignet ist. Der Wechsel ging schneller als erwartet, jedoch musste ein grosser Umweg gemacht werden, was Zeit kostete.
+
