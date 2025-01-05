@@ -1,0 +1,1 @@
+Dieses Video zeigt den technischen Endstand dieser Arbeit, bevor mit dem Bau des Handschuhs angefangen wird. Das Auto hat auch einen Buzzer, welches 10 Sekunden lang tönt um den Kalibrierungsprozess anzudeuten.
