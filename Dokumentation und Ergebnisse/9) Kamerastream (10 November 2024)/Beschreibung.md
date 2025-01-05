@@ -1,0 +1,1 @@
+Ein simples Programm soll zeigen, dass der Kamerastream sepparat zu den Hauptprogrammen funktionieren kann und nichts verlangsamt. Threading erlaubt es Prozesse zu trennen, damit die nicht gleichzeitig passieren und sich gegenseitig verlangsamen. Der Stamm ist hier die konstante Kamerabewegung und der Thread ist der Stream, welcher am Desktop des Raspberry Pi 4 angezeigt wird.
