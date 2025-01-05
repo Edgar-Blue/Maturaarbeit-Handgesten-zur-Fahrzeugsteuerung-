@@ -1,5 +1,3 @@
-Nachdem das senden der Daten mit einem Flex-Sensor funktioniert hat, konnte man versuchen einen Zweiten hinzuzufügen. Es werden zwei Spannungsteiler verwendet, welche sich gegenseitig nicht beeinflussen können. 
+Nachdem das Senden der Daten mit einem Flex-Sensor erfolgreich funktionierte, konnte ein zweiter Flex-Sensor hinzugefügt werden. Dafür wurden zwei separate Spannungsteiler verwendet, die sich gegenseitig nicht beeinflussen konnten.
 
-Es passierte ein grosses Problem. 
-
-Am folgenden Tag fing das Auto an zu rauchen, da irgendein Komponent anfing zu brennen und die Signale des Raspberry Pi 4 kamen danach nicht mehr an die DC-Motoren, sodass es nicht mehr fahren konnte.
+Es trat jedoch ein grosses Problem auf. Am folgenden Tag begann das Auto zu rauchen, da eine Komponente zu brennen anfing. Dadurch wurden die Signale des Raspberry Pi 4 nicht mehr an die DC-Motoren übertragen, sodass das Auto nicht mehr fahren konnte.
