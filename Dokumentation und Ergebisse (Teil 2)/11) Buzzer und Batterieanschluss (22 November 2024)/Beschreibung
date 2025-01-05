@@ -1,0 +1,3 @@
+Der Buzzer nutzt einen GPIO-Pin, welches die PWM nutzt. Die Intervalgrösse der HIGH und LOW beeinflusst seine Tonhöhe, sodass man Melodien abspielen kann. Sie ist jedoch nicht Teil der Maturaarbeit sondern vereinfacht den Verbindungsprozess mit dem Auto. 
+
+Im nächsten Video sieht man aber, für was genau der Buzzer wichtig ist. Da der Batterieanschluss dazukommt, wird der Raspberry Pi Pico W vom Laptop getrennt, sodass man den Verbindungsprozess zum Router nicht sehen kann. Das Programm wird auf dem Pico gespeichert, jedoch wird es nicht ausgeführt. Damit ein Programm automatisch ausgeführt wird beim Stromanschluss, muss es ein Programm haben unter dem Namen "main.py". Dort kann man dann sagen, welche anderen Programme ausgeführt werden.
