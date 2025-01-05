@@ -1,3 +1,3 @@
-Das vorherige Programm wurde erweitert, sodass es seine Daten an das Auto sendet, auch in Form von Paketen. Im Gegensatz zu den Flex-Sensoren muss nichts angepasst werden, da die Servomotoren sowieso in Winkel operieren und hier einfach eingesetzt werden.
+Das vorherige Programm wurde erweitert, sodass es seine Daten ebenfalls in Form von Paketen an das Auto sendet. Im Gegensatz zu den Flex-Sensoren musste hier nichts angepasst werden, da die Servomotoren ohnehin mit Winkeln arbeiten und direkt verwendet werden können.
 
-Die erste Idee der Arbeit war es die Winkel so einzusetzen, sodass jede Handschuhposition seine entsprechende Kameraposition hätte. Das zeigte sich als unpraktisch, da schnelle Bewegungen den Motoren schaden würden. Ausserdem wäre die Bewegung ziemlich ungenau, wie dieses Video es gezeigt hat.
+Die ursprüngliche Idee der Arbeit war, die gemessenen Winkel so einzusetzen, dass jede Position des Handschuhs einer entsprechenden Kameraposition zugeordnet wird. Dies erwies sich jedoch als unpraktisch, da schnelle Bewegungen den Motoren schaden könnten. Zudem wäre die Bewegung der Kamera relativ ungenau, wie in einem Testvideo deutlich wurde.
