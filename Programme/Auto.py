@@ -108,7 +108,7 @@ def receive_and_control():
                     motordata2 = (flex_value2 - mid_flex2) * amp_flex2
                     if gyrox > 10 or gyrox < -10 and servodata1 > 5 or servodata1 < 175:
                         servodata2 += gyrox/10
-                    if gyrox > 10 or gyrox < -10 and servodata1 > 5 or servodata1 < 175:
+                    if gyroz > 10 or gyroz < -10 and servodata1 > 5 or servodata1 < 175:
                         servodata1 += gyroz/10
 
                     motordata1, motordata2 = round(motordata1), round(motordata2)
